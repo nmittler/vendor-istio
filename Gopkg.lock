@@ -141,6 +141,8 @@
     "private/protocol/query/queryutil",
     "private/protocol/rest",
     "private/protocol/xml/xmlutil",
+    "service/cloudwatch",
+    "service/cloudwatch/cloudwatchiface",
     "service/sts"
   ]
   revision = "4b5324816e154564ef4e490842c2e40560971f75"
@@ -266,9 +268,6 @@
     "envoy/config/filter/network/tcp_proxy/v2",
     "envoy/service/discovery/v2",
     "envoy/type",
-    "pkg/cache",
-    "pkg/log",
-    "pkg/server",
     "pkg/util"
   ]
   revision = "9fdf4bd79736a87c78b3d48b7baa84ea24be1c1a"
@@ -1223,6 +1222,7 @@
   packages = [
     "authentication/v1alpha1",
     "broker/dev",
+    "envoy/config/filter/http/authn/v2alpha1",
     "mesh/v1alpha1",
     "mixer/adapter/model/v1beta1",
     "mixer/v1",
@@ -1528,6 +1528,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "40d1d69954dfec356114c9b22857c398344d80df06c2ea92f26ce0d2ad8bcaa3"
+  inputs-digest = "06fd9d5db9786412113a12e4bf5aa4ebf8ca7baaa7fbc0698ff180fca0f1ba6a"
   solver-name = "gps-cdcl"
   solver-version = 1
